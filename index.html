@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<title>Тестовый макет</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<div class="body_site" style="background: url(images/fon_2.png);">
+		<div class="logo">
+			<img src="images/logo.png" alt="logo">
+		</div>
+		<div class="body_content">
+			<div class="position">
+				<img src="images/fon.png" alt="fon" class="fon">
+			    <div class="text1">Поставь ссылку на БИБОСС</div>
+			    <div class="text2">Заработай баллы!</div>
+			    <img src="images/nod.png" alt="nod" class="nod">
+			    <a href="#" class="nod_text">Франшиза Dunkin' Donuts на БИБОСС</a>
+			</div>
+			<div class="empty_cont"></div>
+			<div class="text3">БИБОСС даёт возможность получить бесплатные баллы - нужно лишь разместить на сайте компании </br> любую из ссылок:</div>
+			<div class="text3_li">
+				 <ul>
+				    <li>Текстовая ссылка «Франшиза <span>[Название]</span> на БИБОСС»</li>
+				    <li>Текстовая ссылка «Наша франшиза на БИБОСС»</li>
+				    <li>Кнопка “Нравится франшиза” + счетчик популярности</li>
+				 </ul>
+			</div>
+			<div class="conteiner_text4">
+				<div class="text4_1">Зачем нужны <a href="#">баллы</a>?</div>				
+				<div class="text4_2">Больше баллов - выше позиция в выдаче категории</div>				
+			</div>
+			<div class="conteiner_text5">
+				<div class="conteiner_text5_1">Правила размещения ссылки</div>
+				<div class="conteiner_text5_2">
+					<ul>
+					    <li>Ссылка должна быть индексируемой (без тегов</br> &lt;noindex&gt; и &lt;nofollow&gt;)</li>
+					    <li>Ссылка должна быть читаемой, не скрытой от</br> глаз посетителей сайта,</li>
+					    <li>Ссылка должна быть размещена на странице</br> сайта, посвящённой франчайзингу,</li>
+					    <li>При размещении ссылок на другие порталы о</br> франчайзинге - баллы обнуляются.</li>
+				 	</ul>
+				</div>
+			</div>
+			<div class="conteiner_text6">
+				<div class="conteiner_text6_1">Стоимость ссылки</div>
+				<div class="conteiner_text6_2">200 баллов</div>
+				<div class="conteiner_text6_3">ТиЦ Вашего сайта от 10</div>
+				<div class="conteiner_text6_4">50 баллов</div>
+				<div class="conteiner_text6_5">ТиЦ Вашего сайта от 0 до 10</div>
+			</div>
+			<div class="form">
+				<div class="form_name">ПОЛУЧИТЬ ССЫЛКУ</div>
+				<form action="" method="post" name="test" class="rf block12" onsubmit="return myfun()">
+					<div class="block_1">
+						<div class="block_1_1"><label for="name">Ваше имя</label></div>
+						<div class="block_1_1"><label for="phone">Номер телефона</label></div>
+						<div class="empty_block" id="emp_block1"></div>
+						<div class="block_1_1"><label for="name_2">Название франшизы</label></div>
+					</div>
+					<div class="block_2">
+						<div class="block_2_2">
+							<input type="text" name="name" placeholder="Представьтесь, пожалуйста" id="name" class="rfield" />
+						</div>
+						<div class="block_2_2">
+							<input type="text" name="tel"  id="phone" class="rfield" placeholder="Для начисления баллов и связи с Вами"/><br>
+							<div class="message_block"><span id="message"></span></div>
+						</div>	
+						<div class="block_2_2">			
+							<input type='search' id='search' placeholder="Например, Subway" class="rfield" autocomplete='off'>
+							<div id='result'></div>
+						</div>
+							<script src="js/javascript.js"></script>
+						<div class="block_2_3">
+						<button type="submit" class="btn_submit disabled" id="button">Получить ссылку</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="text7"><span>Это еще не все... </span>Вы можете заработать дополнительные баллы, если разместите на своем сайте новость, интервью или статью БИБОСС о Вашей компании с активной ссылкой! 50 баллов за активную ссылку на новость!</div>
+		</div>
+		<div class="footer"><div class="img"><img src="images/logo2.png" alt="logo2"></div></div>
+	</div>
+<!--Функция при которой выдается ошибка ввода номера телефона если пользователь вводит меньше 11 цифр-->
+<script type="text/javascript">
+		function myfun() {
+			var inpN = document.getElementById('phone').value;
+			if(inpN.length<15) {
+				document.getElementById('message').innerHTML="Укажите правильный телефон"
+				document.getElementById('emp_block1').innerHTML="<br>"
+				document.getElementById('emp_block1').style="height: 28px;"				
+				document.getElementById('phone').style="background-color: #EEF0E5; margin-bottom: 10px;"
+				return false;
+			}
+		}
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/required_fields.js"></script>
+<!--Подключим плагин для создания маски номера телефона-->
+<!--Для того что бы убрать автосброс знаков в input(е) в плагине maskedinput стр. 151 убрал auto из autoclean-->
+<script src="js/jquery.maskedinput-1.4.1.js"></script> 
+<script>
+	$(function() {
+		$("#phone").mask("9 999 999 99 99", { "placeholder": "" });  
+	});
+</script>
+
+</body>
+</html>

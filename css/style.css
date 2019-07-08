@@ -1,0 +1,355 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Тело страницы*/
+.body_site {
+	width: 1200px;
+	margin: 0px auto;
+}
+/*разметка для логотипа*/
+.logo {
+	padding-top: 20px;
+	margin-left: 102px;
+}
+/*разметка для тела контента*/
+.body_content {
+	margin-left: 102px;
+	margin-right: 95px;
+	margin-top: 21px;
+	background-color: #FFFFFF;
+}
+/*блок позиция*/
+.position {
+	position: relative;
+}
+/*закругления углов для картинки в шапке сайта*/
+.fon {
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.text1 {
+	position: absolute;
+	left: 302px;
+	top: 64px;
+	font-family: 'Arial', sans-serif;
+	font-size: 30px;
+	color: #FFFFFF;
+	font-weight: 900;
+}
+
+.text2 {
+	position: absolute;
+	left: 273px;
+	top: 135px;
+	font-family: 'Arial', sans-serif;
+	font-size: 50px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+/*стили для ноутбука*/
+.nod {
+	position: absolute;
+	top: 229px;
+	left: 143px;
+	-webkit-box-shadow: 0 6px 1px -5px #919191;
+	-moz-box-shadow: 0 6px 1px -5px #919191;
+	box-shadow: 0 6px 3px -5px #919191;
+}
+
+.nod_text {
+	position: absolute;
+	left: 363px;
+	top: 390px;
+	font-family: 'Tahoma', sans-serif;
+	font-size: 16px; 
+	color: #5C37EF;
+}
+/*пустой блок для заполнения места под картинкой ноутбука*/
+.empty_cont {
+	height: 254px;
+}
+
+.text3 {
+	margin-left: 104px;
+	font-family: 'Arial', sans-serif;
+	font-size: 16px;
+	color: #000000;
+	line-height: 23px;
+}
+
+.text3_li {
+	margin-top: 16px;
+	margin-left: 117px;
+	font-family: 'Arial', sans-serif;
+	font-size: 16px;
+	color: #000000;
+	line-height: 23px;
+	border-radius: 50%;
+}
+
+.text3_li span {
+	color: #B5B5B5;
+}
+/*контейнер с двумя блоками текста*/
+.conteiner_text4 {
+	background-color: #F7F8FA;
+	height: 120px;
+	width: 800px;
+	margin-left: 104px;
+	margin-top: 40px;
+}
+
+.text4_1 {
+	font-family: 'Arial', sans-serif;
+	font-size: 16px;
+	color: #000000;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.text4_1 a {
+	color: #396EA9;
+}
+
+.text4_2 {
+	font-family: 'Arial', sans-serif;
+	font-size: 24px;
+	color: #000000;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.conteiner_text5 {
+	margin-top: 41px;
+	margin-left: 104px;
+	float: left;
+}
+
+.conteiner_text5_2 {
+	margin-left: 14px;
+	margin-top: 15px;
+	font-family: 'Arial', sans-serif;
+	font-size: 16px;
+	color: #000000;
+	line-height: 1.5;
+}
+
+.conteiner_text5_2 li {
+	padding-top: 10px;
+}
+
+.conteiner_text5_1 {
+	font-family: 'Arial', sans-serif;
+	font-size: 24px;
+	color: #000000;
+}
+
+.conteiner_text6 {
+	float: left;
+	margin-top: 41px;
+	margin-left: 43px;
+}
+
+.conteiner_text6_1 {
+	font-family: 'Arial', sans-serif;
+	font-size: 24px;
+	color: #000000;
+}
+
+.conteiner_text6_2 {
+	margin-top: 25px;
+	font-family: 'Arial', sans-serif;
+	font-size: 40px;
+	color: #1EA01E;
+	font-weight: bold;
+}
+
+.conteiner_text6_3 {
+	font-family: 'Arial', sans-serif;
+	font-size: 16px;
+	color: #000000;
+	margin-top: 13px;
+}
+
+.conteiner_text6_4 {
+	font-family: 'Arial', sans-serif;
+	font-size: 40px;
+	color: #1EA01E;
+	font-weight: bold;
+	margin-top: 28px;
+}
+
+.conteiner_text6_5 {
+	font-family: 'Arial', sans-serif;
+	font-size: 16px;
+	color: #000000;
+	margin-top: 13px;
+}
+/*стили для формы обратной связи*/
+.form {
+	margin-top: 350px;
+	margin-left: 104px;
+	background-color: #FFF4B3;
+	width: 800px; 
+	border-radius: 5px;
+}
+
+input:focus {
+	outline: none;
+}
+/*стили для названия формы*/
+.form_name {
+	text-align: center;
+	font-family: 'Arial', sans-serif;
+	font-size: 16px;
+	color: #000000;
+	font-weight: bold;
+	padding-top: 28px;
+}
+/*общий блок формы включающий 2 подблока block_1 , block_2*/
+.block12 {
+	display: block;
+	margin-top: 29px;
+	margin-left: 139px;
+}
+
+.block_1 {
+	display: inline-block;
+	padding-right: 29px;
+	font-family: 'Arial', sans-serif;
+	font-size: 14px;
+	color: #000000;
+}
+
+.block_1_1 {
+	height: 40px;
+	margin-bottom: 15px;
+	line-height: 40px;
+}
+
+.block_2 {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.block_2_2 input {
+	width: 350px;
+	font-family: 'Arial', sans-serif;
+	font-size: 14px;
+	padding: 11px 0px 10px 14px;
+	border: 1px solid #ABB0B2;
+	border-radius: 5px;
+}
+
+.block_2_2 input::placeholder {
+	color: #B3B3B3; 
+}
+
+.block_2_2 {
+	margin-bottom: 15px;
+}
+/*стили для кнопки формы в автивном состоянии*/
+.block_2_3 .btn_submit {
+	font-family: 'Arial', sans-serif;
+	font-size: 16px;
+	color: #FFFFFF;
+	background-color: #0D972B;
+	padding: 12px 18px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	margin-bottom: 38px;
+}
+/*стили для кнопки формы в неактивном состоянии*/
+.block_2_3 .btn_submit.disabled {
+	background-color: #B6D88A;
+	color: #F2F8EB;
+	cursor: default;
+}
+/*стили для сообщения об ошибки введенного номера телефона*/
+#message {
+	color: #FF0000;
+	font-family: 'Arial', sans-serif;
+	font-size: 14px;
+}
+/*стиль поля input в режиме наведения на него*/
+input#name:focus, 
+input#phone:focus {
+	box-shadow: 0 0 7px 1px rgba(0,207,222,0.5);
+}
+
+input {
+	-webkit-appearance: none;
+}
+/*поле input поисковик*/
+#search {
+  width: 366px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  padding: 11px 0px 10px 14px;
+  border: 1px solid #ABB0B2;
+  border-radius: 5px;
+}
+
+input#search:focus {
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 7px 1px rgba(0,207,222,0.5);
+}
+/*цвет подсказки в поле input в пассивном состоянии*/
+#search::placeholder {
+  color: #B3B3B3; 
+}
+/*блок выпадающего поля*/
+#result {
+  position: absolute;
+  border-radius: 0 0 5px 5px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  background: #fff;
+  width: 366px;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.3),
+              0 0 8px 0 rgba(0,235,252,0.5);
+}
+/*элемент в выпадающем поле*/
+.list:hover{
+  background: #F7F8FA;
+  cursor: pointer;
+}
+
+.list {
+  padding: 10px 15px;
+}
+/*блок с текстовой информации после формы*/
+.text7 {
+	margin-top: 28px;
+	margin-left: 104px;
+	width: 800px; 
+	font-family: 'Arial', sans-serif;
+  	font-size: 16px;
+  	line-height: 25px;
+  	padding-bottom: 60px;
+}
+
+.text7 span {
+	font-weight: bold;
+}
+
+.footer {
+	background-color: #000000;
+	height: 60px;
+}
+
+.footer .img {
+	padding-left: 122px;
+	padding-top: 20px;
+}
+
+/*отдельный стиль для IE10-11*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+#search {
+	width: 350px;
+}   
+}
